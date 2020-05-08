@@ -1,0 +1,153 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.logo {
+    height: 46px;
+    width: auto; /* 위에서 지정해준 높이에 맞게 넓이를 자동으로 맞추어주는 속성 */
+    flex: 1 9999 0%; /* flex 속성에 대해서는 아래 css 이모저모 파트에서 자세하게 다룸 */
+}
+
+.logo_img {
+    height: 100%; /* 해당 요소가 속한 div 의 height의 100% 크기로 높이를 설정함 */
+    width: auto;
+}
+.search {
+    height: 28px;
+    width: 215px;
+    margin: auto;
+}
+
+.search_box {
+    height: 100%;
+    width: 100%;
+    background: #fafafa; /* 배경색 지정 */
+    border: solid 1px #dbdbdb; /* 테두리의 패턴/ 굵기/ 색상 지정 */
+    border-radius: 3px; /* 박스의 모서리 곡률 지정 */
+    color: #999; /* 글씨체 색상 지정 */
+    cursor: text;
+    font-size: 14px; /* 글씨체 크기 지정 */
+    font-weight: 300; /* 글씨체 굵기 지정 */
+    text-align: center; /* 글 나열 방식 지정 */
+}
+
+.button {
+    display: flex; /* 추가 */
+    flex-direction: row; /* 추가 : 정렬 방향이 row 형태로 되게 하는 속성 */
+    flex: 1; /* 추가 : 컨텐츠들의 크기를 전체 div에 맞게 크기를 조절해주는 속성  */
+    justify-content: flex-end; /* 추가 :  cotents들을 div 끝에 맞춰 정렬해주는 속성 */
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header {
+    height: 77px; 
+    width: 100%; /* 화면 넓이에 꽉 차게 하는 속성 */
+    position: fixed; /*스크롤해도 항상 위에 고정시키는 속성 */
+    top: 0; /*화면 가장 위에 위치시키는 속성 */
+    z-index: 1; /* 배치 순서를 나타내는 속성, 숫자가 클 수록 앞에 보이게 됨 */
+    background-color: white;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1); /*1px은 테두리의 크기,solid는 테두리의 패턴,rgba~는 색상정보*/
+}
+
+.header_inner {
+    padding: 16px; 
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+.feed{
+    top: 77px;
+    height: 100%-77px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+.contents{
+    left: 100px;
+    top:150px;
+    position: fixed;
+    margin: auto;
+    height: 520px;
+    width:  600px;
+    background-color: white;
+    border: 2px solid rgba(var(--b6a,219,219,219),1);
+
+}
+.idname{
+    width:600px;
+    height:70px;
+    background-color: white;
+    border-bottom: 2px solid rgba(var(--b6a,219,219,219),1);
+}
+.idname_inner {
+    padding: 26px; 
+    margin: auto;
+    width: 548px;
+    height:20px;
+    font-size:20px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif
+}
+.photo{
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    border-bottom: 2px solid rgba(var(--b6a,219,219,219),1);
+}
+.like{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-bottom: 2px solid rgba(var(--b6a,219,219,219),1);
+}
+.reply{
+    width: 570px;
+    height: 14px;
+    padding:15px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: space-between ;
+}
+.upload{
+    width:30px;
+    height:14px;
+    margin:none;
+    padding:none;
+    font-size:14px; 
+    color: palevioletred;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.icon2 {
+    width: 22px;
+    height: 22px;
+}
+.button2 {
+    margin-left: 15px;
+    padding-left:10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width:590px;
+    height: 24px;
+}
+.reply_box{height: 20px;
+    width: 300px;
+    cursor: text;
+    font-size: 14px; /* 글씨체 크기 지정 */
+    text-align: left; /* 글 나열 방식 지정 */
+    border:none;
+}
